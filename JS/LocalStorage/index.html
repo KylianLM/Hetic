@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="public/css/foundation.css">
+    <title>Chez Luigi</title>
+    <style>
+        body {
+            background: #F6F6F6;
+        }
+        #wrap {
+            margin-top: 100px;
+        }
+        h1 {
+            margin: 50px;
+        }
+        .logo {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+<div class="logo">
+    <h1>Chez Luigi</h1>
+</div>
+<div id="wrap" class="row">
+    <div class="large-3 columns">
+        <form action="">
+            <label for="name">Name :</label>
+            <input type="text" id="name" value="Toto">
+            <label for="type">Type :
+                <select name="type" id="type">
+                    <option value="pizza">Pizza</option>
+                    <option value="pates">Pâtes</option>
+                </select>
+            </label>
+            <label for="type">Ingrédients :</label>
+            <input type="text" id="recipe" placeholder="ex. Tomates, Mozza">
+            <label for="price">Prix :</label>
+            <input type="text" id="price" placeholder="ex. 9.5">
+            <input type="submit" class="button" id="send">
+        </form>
+    </div>
+
+    <div id="content" class="large-9 column">
+        <div class="row">
+            <div id="pizza" class="large-6 column ">
+                <h2>Pizza</h2>
+
+            </div>
+            <div id="pates" class="large-6 column">
+                <h2>Pâtes</h2>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="menu.js"></script>
+<script src="public/js/main.js"></script>
+</body>
+</html>
